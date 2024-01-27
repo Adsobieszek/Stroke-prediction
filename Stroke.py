@@ -24,9 +24,7 @@ data = data.drop(columns=['id'])
 
 # # #checking if there is some empty data
 missing_values = data.isnull().sum()
-
-# # # Display the count of missing values for each column
-# # print(missing_values)
+print(missing_values)
 
 # # # #there are some rows where bmi cell is empty so we removing them since I have enough data
 data.dropna(subset=['bmi'], inplace=True)
@@ -88,61 +86,7 @@ plt.xticks([0, 1], ['No Stroke', 'Stroke'])
 plt.show()
 
 
-# #Histogram Chart
 
-
-# # Set up subplots
-# fig, axes = plt.subplots(nrows=len(numerical_attributes), ncols=2, figsize=(12, 8))
-
-# # Create histograms and density plots for each numerical attribute
-# for i, attribute in enumerate(numerical):
-#     # Histogram
-#     sns.histplot(data=data, x=attribute, kde=True, ax=axes[i, 0])
-#     axes[i, 0].set_title(f'{attribute} Histogram')
-
-#     # Density Plot
-#     sns.kdeplot(data=data, x=attribute, ax=axes[i, 1], color='orange')
-#     axes[i, 1].set_title(f'{attribute} Density Plot')
-
-# # Adjust layout
-# plt.tight_layout()
-# plt.show()
-
-
-
-# # Set up subplots
-# fig, axes = plt.subplots(nrows=len(categorical), ncols=1, figsize=(6, 12))
-
-# # Create bar charts for each categorical attribute
-# for i, attribute in enumerate(categorical_attributes):
-#     sns.countplot(data=data, x=attribute, ax=axes[i])
-#     axes[i].set_title(f'{attribute} Distribution')
-
-# # Adjust layout
-# plt.tight_layout()
-# plt.show()
-
-
-# # Extract feature names after one-hot encoding
-# feature_names = X.columns
-
-# # Get feature importances
-# feature_importances = clf.feature_importances_
-
-
-# # Create a DataFrame to store feature names and their importances
-# feature_importance_df = pd.DataFrame({'Feature': feature_names, 'Importance': feature_importances})
-
-# # Sort the DataFrame by importance in descending order
-# feature_importance_df = feature_importance_df.sort_values(by='Importance', ascending=False)
-
-# # Create a bar plot for feature importances
-# plt.figure(figsize=(10, 6))
-# sns.barplot(x='Importance', y='Feature', data=feature_importance_df)
-# plt.title('Feature Importances')
-# plt.xlabel('Importance')
-# plt.ylabel('Feature')
-plt.show()
 
 
 
