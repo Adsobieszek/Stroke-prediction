@@ -1,2 +1,2 @@
 # Stroke-prediction
-https://github.com/AdSobieszek/main/blob/main/5.jpg?raw=true
+![alt text](https://github.com/Adsobieszek/Happiness-World/blob/main/5.png?raw=true)
