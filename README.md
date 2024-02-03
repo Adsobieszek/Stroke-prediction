@@ -1,8 +1,14 @@
 # Stroke-prediction
 
+# Data cleaning
 ![1](https://github.com/Adsobieszek/Stroke-prediction/assets/134363499/c4ff14f2-bd70-478d-9600-e8bb8968fc1b)
+Firstly, i tried to clean the data. I made some steps, like dropping 'id' columns which was not useable,  removing rows where 'bmi' was null since i knew that i can afford that due to having enough data. I've converted 'work_type' and 'smoking_status' to binary indictaros. I also realised that there were almost no data where gender = other, so i have removed those rows and changed it to binary values.
+
 ![2](https://github.com/Adsobieszek/Stroke-prediction/assets/134363499/f957fd84-b61f-4a0e-95e9-a3634bb70370)
+
+Then i created matrix correlation with numeric variables and i turned out that the correlation between all variables is small so i could take it as it was.
 ![3](https://github.com/Adsobieszek/Stroke-prediction/assets/134363499/92c2e65e-3614-4261-8b3d-30de2760b174)
+
 ![4](https://github.com/Adsobieszek/Stroke-prediction/assets/134363499/cb29817a-3c66-42a1-96a0-6a10a9720887)
 ![5](https://github.com/Adsobieszek/Stroke-prediction/assets/134363499/37d91426-c4a8-440b-bf43-be3bac7500a3)
 ![6](https://github.com/Adsobieszek/Stroke-prediction/assets/134363499/9f5cf842-21ef-41b5-9c5b-c04270e8195d)
