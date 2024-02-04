@@ -13,19 +13,24 @@ Firstly, i tried to clean the data. I made some steps, like dropping 'id' column
 ![2](https://github.com/Adsobieszek/Stroke-prediction/assets/134363499/f957fd84-b61f-4a0e-95e9-a3634bb70370)
 
 Then i created matrix correlation with numeric variables and i turned out that the correlation between all variables is small so i could take it as it was.
+
 ![3](https://github.com/Adsobieszek/Stroke-prediction/assets/134363499/92c2e65e-3614-4261-8b3d-30de2760b174)
 
 Histogram & density plots describes the age, average glucose level and bmi. The median group are adult people. Glucose level distribution is skewed towards left and the biggets group has around 80 mg/dl. 
 BMI is highly skewed and the median is around 27.
+
 ![5](https://github.com/Adsobieszek/Stroke-prediction/assets/134363499/37d91426-c4a8-440b-bf43-be3bac7500a3)
 
 The plot displays average glucose level and age. We can see the trend, the more aged people and higher glucose level, then more stroke events.
+
 ![6](https://github.com/Adsobieszek/Stroke-prediction/assets/134363499/9f5cf842-21ef-41b5-9c5b-c04270e8195d)
 
 This plot  displays average glucose level and bmi. It is similiar to previous one, stroke occurs more to people with high bmi and high glucose level.
+
 ![7](https://github.com/Adsobieszek/Stroke-prediction/assets/134363499/eebe50dc-d583-4482-bf7a-7dc84379fea0)
 
 Our data was imbalanced, that could have big impact on the model performance. So i decided to use undersampling method - SMOTE. 
+
 ![4](https://github.com/Adsobieszek/Stroke-prediction/assets/134363499/cb29817a-3c66-42a1-96a0-6a10a9720887)
 ![8](https://github.com/Adsobieszek/Stroke-prediction/assets/134363499/38ebd536-f49a-4f2a-86c0-62187a1df380)
 
