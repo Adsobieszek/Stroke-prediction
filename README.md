@@ -5,7 +5,7 @@ Problem Statement
 
 Visululize the relationships between various Healthy and Unhealthy habits to Heart Strokes, and there by predict the stroke probability with best model and hypertuned parameters.
 
-<img src="4.png" width="400" height="200">
+<img src="4.png" width="500" height="500">
 # Data cleaning
  ![1](https://github.com/Adsobieszek/Stroke-prediction/assets/134363499/c4ff14f2-bd70-478d-9600-e8bb8968fc1b)
 
