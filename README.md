@@ -74,8 +74,19 @@ Then, i used **KNN algorithms** with k=3 and k=5. K-nearest neighbors, is a clas
 
 This ***model knn=5 is more balanced***, more resistant to noise or deviations in the data than knn=3 because it can be used for more advanced forecasts.
 
+The initial node at the top of the **decision tree** is referred to as the root node. It makes decisions on how to partition based on attribute values, following a recursive partitioning process. This flowchart-style arrangement aids in decision-making and resembles human-level thinking. Decision trees are visually similar to flowchart diagrams, contributing to their ease of understanding and interpretation. This inherent simplicity makes decision trees accessible for analysis and comprehension.
 <img src="12.png" width="600">
+
+A ***decision tree*** is a tree-like structure resembling a flowchart. In this structure, internal nodes represent features or attributes, branches depict decision rules, and each leaf node signifies an outcome.
+The initial node at the top of the decision tree is referred to as the root node. It makes decisions on how to partition based on attribute values, following a recursive partitioning process. This flowchart-style arrangement aids in decision-making and resembles human-level thinking. Decision trees are visually similar to flowchart diagrams, contributing to their ease of understanding and interpretation. This inherent simplicity makes decision trees accessible for analysis and comprehension.
+
 <img src="13.png" width="600">
+
+
 <img src="14.png" width="600">
-<img src="15.png" width="600">
-<img src="16.png" width="600">
+
+The ***decision tree model*** for stroke prediction shows a high **precision for predicting strokes at 76%**, suggesting that when it predicts a stroke, it is correct 76% of the time. The **recall for strokes is also relatively high at 90%**, indicating that the model successfully captures 90% of actual stroke cases. The overall performance is summarized with an **accuracy of 77%**, providing a balanced view of the model's effectiveness in predicting strokes.   
+
+# Conclusion
+
+For all four algorithms, the algorithm K-nearest neighbours with k=5 and Support Vector Machine looks the best and have similiar scores. The worst on is decision tree model.
